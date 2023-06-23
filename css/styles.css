@@ -40,7 +40,7 @@ body {
 }
 
 .component__result {
-    background-color: var(--gradients-light-slate-blue-background);
+    /* background-color: var(--gradients-light-slate-blue-background); */
     box-sizing: border-box;
     border-radius: 2rem;
     padding: 2.5rem 3.75rem;
@@ -51,6 +51,9 @@ body {
     color: var(--neutral-white);
     width: 50%;
     box-sizing: border-box;
+    background-image: linear-gradient(var(--gradients-light-slate-blue-background), var(--gradients-light-royal-blue-background));
+    /* --gradients-light-slate-blue-background: hsl(252, 100%, 67%);
+    --gradients-light-royal-blue-background: hsl(241, 81%, 54%); */
 }
 
 .component__title {
@@ -68,8 +71,12 @@ body {
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    background-color: var(--primary-cobalt-blue);
+    /* background-color: var(--primary-cobalt-blue); */
     margin: 1rem 0;
+    background-image: linear-gradient(var(--gradients-violet-blue-circle), var(--gradients-persian-blue-circle));
+    /* background-image: linear-gradient(hsl(255, 71%, 46%), rgba(76, 34, 201, 0)); */
+    /* --gradients-violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --gradients-persian-blue-circle: hsla(241, 72%, 46%, 0); */
 }
 
 .component__score {
