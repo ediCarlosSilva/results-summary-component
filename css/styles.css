@@ -25,7 +25,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-color: var(--neutral-white);
-    gap: 1rem;
+    /* gap: 1rem; */
+    position: relative;
 }
 
 .component {
@@ -209,4 +210,38 @@ body {
 
 .card__button:active, .card__button:hover {
     background-color: var(--gradients-violet-blue-circle);
+}
+
+@media screen and (max-width: 600px) {
+    .component {
+        flex-direction: column;
+        width: initial;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .component__result, .component__summary {
+        width: 100%;
+        border-radius: 0 0 2rem 2rem;
+        padding: 2rem;
+    }
+
+    .component__group--score {
+        width: 145px;
+        height: 145px;
+        margin: 0;
+    }
+
+    .component__score {
+        font-size: 3rem;
+    }
+
+    .component__result--name {
+        margin: 0;
+    }
+
+    .attribution {
+        position: initial !important;
+        margin-bottom: .5rem;
+    }
 }
