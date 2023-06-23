@@ -19,7 +19,6 @@
 
   <style>
     .attribution {
-      font-size: 11px;
       text-align: center;
     }
 
@@ -32,28 +31,44 @@
 <body>
   <main class="component">
     <section class="component__result">
-      <h1 class="component__title">Your Result</h1>
-      76
-      of 100
+      <p class="component__title">Your Result</p>
+      <div class="component__group--score">
+        <span class="component__score">76</span>
+        <span class="component__of100">of 100</span>
+      </div>
 
-      Great
-      You scored higher than 65% of the people who have taken these tests.
+      <h1 class="component__result--name">Great</h1>
+      <p class="component__result-description">You scored higher than 65% of <span class="component__description--span">the people who have taken</span> these tests.</p>
     </section>
 
     <section class="component__summary">
-      Summary
+      <p class="compnent__summary--title">Summary</p>
 
-      Reaction
-      80 / 100
+      <dir class="card__wrapper card__wrapper--reaction">
+        <h3 class="card__title card__title--reaction">Reaction</h3>
+        <p class="card__score">80 <span class="card_percent">/ 100</span></p>
+      </dir>
 
-      Memory
-      92 / 100
-
-      Verbal
-      61 / 100
-
-      Visual
-      72 / 100
+      <div class="card__wrapper card__wrapper--memory">
+        <h3 class="card__title card__title--memory">
+          Memory
+        </h3>
+        <p class="card__score">92 <span class="card_percent">/ 100</span></p>
+      </div>
+      
+      <div class="card__wrapper card__wrapper--verbal">
+        <h3 class="card__title card__title--verbal">
+          Verbal
+        </h3>
+        <p class="card__score">61 <span class="card_percent">/ 100</span></p>
+      </div>
+      
+      <div class="card__wrapper card__wrapper--visual">
+        <h3 class="card__title card__title--visual">
+          Visual
+        </h3>
+        <p class="card__score">72 <span class="card_percent">/ 100</span></p>
+      </div>
 
       Continue
     </section>
@@ -61,7 +76,6 @@
   </main>
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/edicarlossilva">Edi Carlos</a>.
   </div>
 </body>
