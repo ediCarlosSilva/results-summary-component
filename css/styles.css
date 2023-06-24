@@ -147,6 +147,11 @@ body {
     background-color: hsla(var(--var-primary-cobalt-blue), .1);
 }
 
+.card__criterion {
+    display: flex;
+    gap: .5rem;
+}
+
 .card__title {
     font-size: 1.2rem;
     display: flex;
@@ -161,32 +166,16 @@ body {
     color: hsl(var(--primary-light-red));
 }
 
-.card__title--reaction::before {
-    content: url(../assets/images/icon-reaction.svg);
-}
-
 .card__title--memory {
     color: var(--primary-orangey-yellow);
-}
-
-.card__title--memory::before {
-    content: url(../assets/images/icon-memory.svg);
 }
 
 .card__title--verbal {
     color: var(--primary-green-teal);
 }
 
-.card__title--verbal::before {
-    content: url(../assets/images/icon-verbal.svg);
-}
-
 .card__title--visual {
     color: var(--primary-cobalt-blue);
-}
-
-.card__title--visual::before {
-    content: url(../assets/images/icon-visual.svg);
 }
 
 .card__score {
