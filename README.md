@@ -33,6 +33,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Javascript (Dynamic update of the values)
 
 ## Author
 
